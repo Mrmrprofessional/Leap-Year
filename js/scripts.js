@@ -13,10 +13,13 @@ $(document).ready(function() {
 
         $(".year").text(year);
         if (!result) {
-            $(".not").text("not");
+            $(".not").show();
+        } else {
+            $(".not").hide();
         }
 
         $("#result").show();
         event.preventDefault();
+
     });
 });
